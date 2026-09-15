@@ -1,59 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
 </head>
 <body>
-    <a href="index.html">IMDb Charts</a>
-    <a href="cv.html">Curiculum Vitae</a>
-    <a href="form.html">Form</a>
-    <a href="blog.html">DevBlogs </a>
+    <header>
+        <nav>
+            <a href="index.html">IMDb Charts</a>
+            <a href="cv.html">Curiculum Vitae</a>
+            <a href="form.html">Form</a>
+            <a href="blog.html">DevBlogs</a>
+        </nav>
+    </header>
     <hr>
 
-    <fieldset><legend>Daftar Akun</legend>
-        <form>
-            Nama Lengkap :
-            <input type="text" name="" id="">
-            <hr>
-            Jenis Kelamin : 
-            <input type="radio" name="jk" value="Laki-Laki">Laki-Laki
-            <input type="radio" name="jk" value="Perempuan">Perempuan
-            <hr>
-            Tempat Lahir :
-            <input type="text" name="" id="">
-            <hr>
-            Tanggal Lahir :
-            <input type="date" name="" id="">
-            <hr>
-            Agama :
-            <select name="Agama">
-                <option value="">--Pilih Agama---</option>
-                <option value="">Islam</option>
-                <option value="">Katolik</option>
-                <option value="">Protestan</option>
-                <option value="">Hindu</option>
-                <option value="">Budha</option>
-                <option value="">Konghucu</option>
-            </select>
-            <hr>
-            Hobi :
-            <input type="checkbox" name="" id="">Olahraga
-            <input type="checkbox" name="" id="">Membaca
-            <input type="checkbox" name="" id="">Ngoding
-            <hr>
-            Password:
-            <input type="text" name="" id="">
-            <hr>
-            <input type="checkbox" name="" id="">Dengan mendaftar saya setuju dengan ketentuan dan kebijakan Privasi Aplikasi
-            <hr>
-            <input type="reset" name="" id="">
-            <input type="submit" name="" id="">
-        </form>
+    <main>
+        <h1>Formulir Pendaftaran</h1>
 
-    
-    </fieldset>
-    
+        <fieldset><legend>Daftar Akun</legend>
+            <form>
+                <label>Nama Lengkap:
+                    <input type="text" name="nama_lengkap" id="nama_lengkap">
+                </label>
+                <hr>
+
+                Jenis Kelamin:
+                <label><input type="radio" name="jk" value="Laki-Laki"> Laki-Laki</label>
+                <label><input type="radio" name="jk" value="Perempuan"> Perempuan</label>
+                <hr>
+
+                <label>Tempat Lahir:
+                    <input type="text" name="tempat_lahir" id="tempat_lahir">
+                </label>
+                <hr>
+
+                <label>Tanggal Lahir:
+                    <input type="date" name="tanggal_lahir" id="tanggal_lahir">
+                </label>
+                <hr>
+
+                <label for="agama">Agama:</label>
+                <select name="Agama" id="agama">
+                    <option value="">--Pilih Agama---</option>
+                    <option value="Islam">Islam</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Protestan">Protestan</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Budha">Budha</option>
+                    <option value="Konghucu">Konghucu</option>
+                </select>
+                <hr>
+
+                Hobi:
+                <label><input type="checkbox" name="hobi" value="Olahraga"> Olahraga</label>
+                <label><input type="checkbox" name="hobi" value="Membaca"> Membaca</label>
+                <label><input type="checkbox" name="hobi" value="Ngoding"> Ngoding</label>
+                <hr>
+
+                <label>Password:
+                    <input type="password" name="password" id="password">
+                </label>
+                <hr>
+
+                <label>
+                    <input type="checkbox" name="setuju" id="setuju">
+                    Dengan mendaftar saya setuju dengan ketentuan dan kebijakan Privasi Aplikasi
+                </label>
+                <hr>
+
+                <input type="reset" value="Reset">
+                <input type="submit" value="Daftar">
+            </form>
+        </fieldset>
+    </main>
 </body>
 </html>
